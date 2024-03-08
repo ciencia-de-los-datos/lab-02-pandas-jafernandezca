@@ -119,6 +119,16 @@
       "comparison": "exact",
       "timeout": 1,
       "points": 1
+    },
+     {
+      "name": "Pregunta 13",
+      "setup": "pip3 install pandas",
+      "run": "python3 tests.py 13",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
     }
   ]
 }
