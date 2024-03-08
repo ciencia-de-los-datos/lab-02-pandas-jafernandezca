@@ -237,7 +237,7 @@ def pregunta_13():
     Name: _c5b, dtype: int64
     """
     merged_df = pd.merge(tbl0, tbl2, left_on='_c0', right_on='_c0', suffixes=('_tbl0', '_tbl2'))
-    result_df = merged_df.groupby('_c1')['_c5b'].sum().reset_index()
+    result_series = merged_df.groupby('_c1')['_c5b'].sum()
     
-    return result_df
+    return result_series
 
