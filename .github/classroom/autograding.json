@@ -52,7 +52,7 @@
     },
     {
       "name": "Pregunta 06",
-      "setup": "pip3 install",
+      "setup": "pip3 install pandas",
       "run": "python3 tests.py 06",
       "input": "",
       "output": "",
