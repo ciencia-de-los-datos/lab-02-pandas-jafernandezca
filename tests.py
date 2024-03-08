@@ -207,6 +207,8 @@ test = {
     "11": test_11,
     "12": test_12,
     "13": test_13,
-}[sys.argv[1]]
+}.get(sys.argv[1])
 
-test()
+if test is None:
+    print(f"Error: No se encontró la prueba para la clave {sys.argv[1]}")
+    sys.exit(1)
