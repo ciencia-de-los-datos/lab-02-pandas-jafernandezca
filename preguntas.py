@@ -157,8 +157,10 @@ def pregunta_09():
     39   39   E    5  1998-01-26  1998
 
     """
-    tbl0['year'] = pd.to_datetime(tbl0['_c3'], errors='coerce').dt.year.fillna(0).astype(int)
+    tbl0['year'] = pd.to_datetime(tbl0['_c3'], errors='coerce').dt.year
+    tbl0['year'] = tbl0['year'].astype('Int64')  # Convertir a entero, maneja NA correctamente
     return tbl0
+
 
 def pregunta_10():
     """
