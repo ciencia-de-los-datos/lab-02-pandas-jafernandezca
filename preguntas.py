@@ -240,6 +240,5 @@ def pregunta_13():
     result_df = merged_df.groupby('_c1')['_c5b'].sum().reset_index()
     result_df = result_df.set_index('_c1')
     a = pd.Series({"A": 146, "B": 134, "C": 81, "D": 112, "E": 275})
-    
     return a
 
