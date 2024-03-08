@@ -121,7 +121,7 @@
       "points": 1
     },
     {
-      "name": "Pregunta 13",
+      "name": "Pregunta 12",
       "setup": "pip3 install pandas",
       "run": "python3 tests.py",
       "input": "",
