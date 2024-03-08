@@ -240,5 +240,5 @@ def pregunta_13():
     result_df = merged_df.groupby('_c1')['_c5b'].sum().reset_index()
     result_df = result_df.set_index('_c1')
     
-    return result_df
+    return result_df.squeeze()
 
